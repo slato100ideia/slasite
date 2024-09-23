@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos Próximos ao Vencimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Alimentos Próximos ao Vencimento</h1>
+        <p>Economize comprando alimentos próximos ao vencimento em mercados da sua cidade!</p>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filtrar por Cidade e Mercado</h2>
+            <select id="cityFilter" onchange="filterMarkets()">
+                <option value="all">Selecione a Cidade</option>
+                <option value="rolante">Rolante-RS</option>
+                <option value="taquara">Taquara-RS</option>
+                <option value="igrejinha">Igrejinha-RS</option>
+                <option value="riozinho">Riozinho-RS</option>
+                <option value="santo-antonio">Santo Antônio da Patrulha-RS</option>
+            </select>
+
+            <select id="marketFilter">
+                <option value="all">Selecione o Mercado</option>
+            </select>
+        </section>
+
+        <section class="products" id="productList">
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para reduzir o desperdício de alimentos e economizar dinheiro!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
